@@ -2,6 +2,9 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import showStore from '../stores/showStore';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import showStore from '../stores/showStore';
+
+
 
 const data = [
   {
@@ -64,6 +67,7 @@ export default function Show() {
     width={500}
     height={400}
     data={store.graphData}
+    data={store.graphData}
     margin={{
       top: 10,
       right: 30,
@@ -73,8 +77,10 @@ export default function Show() {
   >
     <CartesianGrid strokeDasharray="3 3" />
     <XAxis dataKey="Date" />
+    <XAxis dataKey="Date" />
     <YAxis />
     <Tooltip />
+    <Area type="monotone" dataKey="Price" stroke="#8884d8" fill="#8884d8" />
     <Area type="monotone" dataKey="Price" stroke="#8884d8" fill="#8884d8" />
   </AreaChart>
 
