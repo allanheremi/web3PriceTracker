@@ -1,4 +1,6 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
+import showStore from '../stores/showStore';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const data = [
@@ -50,11 +52,18 @@ const data = [
   
 
 export default function Show() {
+  const store = showStore()
+  const params = useParams()
+
+  React.useEffect(() => {
+    store.fetchData(params.id)
+  }, [])
+
   return (
     <div>  <AreaChart
     width={500}
     height={400}
-    data={data}
+    data={store.graphData}
     margin={{
       top: 10,
       right: 30,
@@ -63,10 +72,10 @@ export default function Show() {
     }}
   >
     <CartesianGrid strokeDasharray="3 3" />
-    <XAxis dataKey="name" />
+    <XAxis dataKey="Date" />
     <YAxis />
     <Tooltip />
-    <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+    <Area type="monotone" dataKey="Price" stroke="#8884d8" fill="#8884d8" />
   </AreaChart>
 
 </div>
