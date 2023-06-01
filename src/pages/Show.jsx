@@ -4,8 +4,6 @@ import showStore from '../stores/showStore';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 
-
-
 const data = [
   {
     name: 'Page A',
@@ -66,7 +64,6 @@ export default function Show() {
     <div>  <AreaChart
     width={500}
     height={400}
-    data={store.graphData}
     data={store.graphData}
     margin={{
       top: 10,
