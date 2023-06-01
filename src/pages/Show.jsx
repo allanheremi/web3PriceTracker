@@ -74,7 +74,6 @@ export default function Show() {
   >
     <CartesianGrid strokeDasharray="3 3" />
     <XAxis dataKey="Date" />
-    <XAxis dataKey="Date" />
     <YAxis />
     <Tooltip />
     <Area type="monotone" dataKey="Price" stroke="#8884d8" fill="#8884d8" />
