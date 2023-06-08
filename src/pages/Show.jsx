@@ -74,7 +74,7 @@ export default function Show() {
     <div>
       <header>
         <img src={store.dataRes.image.large}/>
-        <h2>{store.dataRes.name} {(store.dataRes.symbol)}</h2>
+        <h2>{store.dataRes.name} ({(store.dataRes.symbol)})</h2>
       </header>
       <AreaChart
         width={500}
@@ -93,6 +93,28 @@ export default function Show() {
         <Tooltip />
         <Area type="monotone" dataKey="Price" stroke="#8884d8" fill="#8884d8" />
       </AreaChart>
+      <div>
+        <h4>Market cap rank</h4>
+        <span>{store.dataRes.market_cap_rank}</span>
+      </div>
+      <div>
+        <h4>24h high</h4>
+        <span>{store.dataRes.market_data.high_24h.usd.toFixed(0)}</span>
+      </div>
+      <h4>24h low</h4>
+      <span>{store.dataRes.market_data.low_24h.usd.toFixed(0)}</span>
+      <div>
+        <h4>Circulating supply</h4>
+        <span>{store.dataRes.market_data.circulating_supply.toFixed(0)}</span>
+      </div>
+      <div>
+        <h4>Current price</h4>
+        <span>${store.dataRes.market_data.current_price.usd.toFixed(0)}</span>
+      </div>
+      <div>
+        <h4>1 year price change</h4>
+        <span>{store.dataRes.market_data.price_change_percentage_1y.toFixed(2)}%</span>
+      </div>
     </div>
   );
 }
