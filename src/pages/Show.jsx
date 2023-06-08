@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import showStore from '../stores/showStore';
+import fetchData from '../stores/showStore';
 import {
   AreaChart,
   Area,
@@ -59,6 +60,7 @@ const data = [
 export default function Show() {
   const store = showStore();
   const params = useParams();
+  const data = fetchData()
 
   React.useEffect(() => {
     store.fetchData(params.id);
@@ -67,7 +69,7 @@ export default function Show() {
   return (
     <div>
       <header>
-        <h2>{[]}</h2>
+        <h2></h2>
       </header>
       <AreaChart
         width={500}
