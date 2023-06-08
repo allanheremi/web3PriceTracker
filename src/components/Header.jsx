@@ -8,11 +8,14 @@ export default function Header() {
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 56 56"
-            width="26"
+            height="48"
+            viewBox="0 -960 960 960"
+            width="48"
           >
-            <path 
-            fill="currentColor" d="M359-242 120-481l239-239 43 43-166 166h604v60H236l166 166-43 43Z" />
+            <path
+              fill="currentcolor"
+              d="M655-80 255-480l400-400 56 57-343 343 343 343-56 57Z"
+            />
           </svg>
         </a>
         <h1>
