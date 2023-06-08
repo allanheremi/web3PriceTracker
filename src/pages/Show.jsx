@@ -60,16 +60,21 @@ const data = [
 export default function Show() {
   const store = showStore();
   const params = useParams();
-  const data = fetchData()
 
   React.useEffect(() => {
     store.fetchData(params.id);
   }, []);
 
+  if (!store.dataRes.name) {
+    // Data is not available yet, display a loading state or placeholder
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
       <header>
-        <h2></h2>
+        <img src={store.dataRes.image.large}/>
+        <h2>{store.dataRes.name} {(store.dataRes.symbol)}</h2>
       </header>
       <AreaChart
         width={500}
