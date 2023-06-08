@@ -27,6 +27,7 @@ const showStore = create(set => ({
       };
     });
     set({graphData: graphData})
+    console.log(dataRes)
   },
 }));
 

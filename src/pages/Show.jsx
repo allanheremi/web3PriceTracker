@@ -67,8 +67,8 @@ export default function Show() {
   return (
     <div>
       <header>
-        <h2></h2>
-      </header>{' '}
+        <h2>{[]}</h2>
+      </header>
       <AreaChart
         width={500}
         height={400}
