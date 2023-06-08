@@ -12,7 +12,13 @@ export default function Home() {
   return (
     <div>
     <Header />
-        <input type="text" value={store.query} onChange={store.setQuery}/>
+    <div className="width">
+    <header className="home-search">
+      <h2>Search for a coin</h2>
+      <input type="text" value={store.query} onChange={store.setQuery}/>
+    </header>
+    </div>
+       
       {store.coins.map(coin => {
         return (
           <div key={coin.id}>
