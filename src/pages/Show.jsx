@@ -67,7 +67,7 @@ export default function Show() {
 
   if (!store.dataRes.name) {
     // Data is not available yet, display a loading state or placeholder
-    return <div>Loading...</div>;
+    return <div class="loadingScreen">Loading...</div>;
   }
 
   return (

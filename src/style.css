@@ -64,6 +64,10 @@ svg:not(.recharts-surface) {
   margin-top: -13px;
 }
 
+.return__button {
+  padding: 10px;
+  align-self: flex-start;
+}
 
 .home-search {
   padding: 40px 0px;
@@ -71,22 +75,22 @@ svg:not(.recharts-surface) {
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 input {
-    border: 1px solid #ddd;
-    padding: 0 1rem;
-    border-radius: 0.5rem;
-    line-height: 3rem;
+  border: 1px solid #ddd;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  line-height: 3rem;
 }
 
 .home__Cryptos {
-font-size: 1.6rem;
-margin-bottom: 1rem;
-text-align: center;
-padding-bottom: 4rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 4rem;
 }
 
 .home__Crypto {
@@ -95,7 +99,7 @@ padding-bottom: 4rem;
   align-items: center;
   padding: 1rem 0;
   border-bottom: 1px solid #ddd;
-
+  
 }
 
 .home__Crypto span {
@@ -158,6 +162,16 @@ padding-bottom: 4rem;
   margin: 0 auto;
 }
 
+.loadingScreen {
+  width: 100%; 
+  height: 500px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .show__Graph {
   height: 200px;
   width: 100%;
@@ -174,7 +188,7 @@ padding-bottom: 4rem;
   justify-content: space-between;
   padding: 1rem 0;
   border-bottom: 1px solid #ddd;
-  font-color: #111;
+  color: #111;
 }
 
 .show__Details__Row h2 {
