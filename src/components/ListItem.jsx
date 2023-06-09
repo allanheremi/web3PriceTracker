@@ -10,10 +10,13 @@ export default function ListItem({ coin }) {
       </span>
 
       <span className="home__Crypto__Name">{coin.name}</span>
+      {coin.priceBTC &&
       <span className="home__Crypto__Prices">
-      <span class="home__Crypto__Btc">{coin.priceBTC} BTC</span>
+      <span class="home__Crypto__Btc">
+        <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"/>
+        {coin.priceBTC} BTC</span>
       <span class="home__Crypto__Usd">({coin.priceUSD} USD)</span>
-      </span>
+      </span> }
     </div>
   );
 }

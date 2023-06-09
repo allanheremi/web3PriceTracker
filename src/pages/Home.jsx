@@ -23,9 +23,11 @@ export default function Home() {
       <div className="home__Cryptos">
         <div className="width">
           <h2>Trending coins</h2>
-          {store.coins.map(coin => {
-            return <ListItem key={coin.id} coin={coin} />;
-          })}
+          <div className="home__Cryptos__List">
+            {store.coins.map(coin => {
+              return <ListItem key={coin.id} coin={coin} />;
+            })}
+          </div>
         </div>
       </div>
     </div>
