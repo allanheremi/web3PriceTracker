@@ -1,10 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function ListItem({ coins }) {
+export default function ListItem({ coin }) {
   return (
-    <div key={coin.id}>
-        <Link to={`/${coin.id}`}>{coin.name}</Link>
+    <div className="home__Crypto">
+      <Link to={`/${coin.id}`}></Link>
+      <span className="home__Crypto__Image">
+        <img src={coin.image} />
+      </span>
+
+      <span className="home__Crypto__Name">{coin.name}</span>
+
+      <span className="home__Crypto__Prices">{coin.priceBTC} BTC</span>
+      <span className="home__Crypto__Prices">{coin.priceUsd} USD</span>
     </div>
-  )
+  );
 }
