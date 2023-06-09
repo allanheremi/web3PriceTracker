@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -18,6 +19,13 @@ input[type='text'] {
   outline: none;
   display: block;
   width: 100%;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.1px);
+-webkit-backdrop-filter: blur(5.1px);
+border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 img {
@@ -33,12 +41,17 @@ img {
 }
 
 .header {
-  background: #112;
   color: grey;
-  padding: 20px 0;
+  padding: 24px 0;
   position: sticky;
   top: 0;
   z-index: 10;
+  /* From https://css.glass */
+background: rgba(17, 17, 34, 0.75);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.3px);
+-webkit-backdrop-filter: blur(4.3px);
+border: 1px solid rgba(17, 17, 34, 0.34);
 }
 
 a {
