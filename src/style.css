@@ -20,6 +20,11 @@ input[type='text'] {
   width: 100%;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .width {
   max-width: 600px;
   margin: 0 auto;
@@ -81,4 +86,32 @@ input {
 font-size: 1.6rem;
 margin-bottom: 1rem;
 text-align: center;
+}
+
+.home__Crypto {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.home__Crypto > span {
+  display: block;
+}
+
+.home__Crypto > a {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.home__Crypto__Image {
+  width: 50px;
+}
+
+.home__Crypto__Name {
+  flex: 1;
 }

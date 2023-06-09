@@ -12,7 +12,7 @@ export default function ListItem({ coin }) {
       <span className="home__Crypto__Name">{coin.name}</span>
 
       <span className="home__Crypto__Prices">{coin.priceBTC} BTC</span>
-      <span className="home__Crypto__Prices">{coin.priceUsd} USD</span>
+      <span className="home__Crypto__Prices">{coin.priceUSD} USD</span>
     </div>
   );
 }
