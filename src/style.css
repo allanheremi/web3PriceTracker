@@ -57,7 +57,7 @@ h1 a {
   color: white;
 }
 
-svg {
+svg:not(.recharts-surface) {
   position: absolute;
   top: 50%;
   left: 0;
@@ -140,4 +140,50 @@ padding-bottom: 4rem;
 
 .home__Cryptos__List {
   border-top: 1px solid #ddd
+}
+
+.show__Header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.show__Header h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.show__Header img {
+  width: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.show__Graph {
+  height: 200px;
+  width: 100%;
+}
+
+.show__Details{
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.show__Details__Row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  font-color: #111;
+}
+
+.show__Details__Row h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #111;
 }
