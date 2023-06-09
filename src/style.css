@@ -89,6 +89,7 @@ text-align: center;
 }
 
 .home__Crypto {
+  gap: 32px;
   display: flex;
   align-items: center;
   padding: 1rem 0;
@@ -96,11 +97,11 @@ text-align: center;
 
 }
 
-.home__Crypto > span {
+.home__Crypto span {
   display: block;
 }
 
-.home__Crypto > a {
+.home__Crypto a {
   gap: 2rem;
   display: flex;
   align-items: center;
@@ -114,4 +115,17 @@ text-align: center;
 
 .home__Crypto__Name {
   flex: 1;
+  font-size: 1rem;
+  color: #111;
+  font-weight: 600;
+}
+
+.home__Crypto__Btc {
+  color: #111;
+  font-size: 1rem;
+}
+
+.home__Crypto__Usd {
+  color: #777;
+  font-size: 0.8rem;
 }

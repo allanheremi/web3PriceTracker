@@ -10,9 +10,10 @@ export default function ListItem({ coin }) {
       </span>
 
       <span className="home__Crypto__Name">{coin.name}</span>
-
-      <span className="home__Crypto__Prices">{coin.priceBTC} BTC</span>
-      <span className="home__Crypto__Prices">{coin.priceUSD} USD</span>
+      <span className="home__Crypto__Prices">
+      <span class="home__Crypto__Btc">{coin.priceBTC} BTC</span>
+      <span class="home__Crypto__Usd">({coin.priceUSD} USD)</span>
+      </span>
     </div>
   );
 }
