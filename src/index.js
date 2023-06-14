@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Show from './pages/Show';
 import { create } from 'zustand'
+import './style.css'
 
 const useBearStore = create((set) => ({
   bears: 0,

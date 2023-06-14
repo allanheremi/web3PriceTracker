@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type='text'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 120;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.1px);
+-webkit-backdrop-filter: blur(5.1px);
+border: 2px solid rgba(128, 128, 128, 0.3);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.width {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 92%;
+  position: relative;
+}
+
+.header {
+  color: grey;
+  padding: 24px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  /* From https://css.glass */
+background: rgba(17, 17, 34, 0.75);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.3px);
+-webkit-backdrop-filter: blur(4.3px);
+border: 1px solid rgba(17, 17, 34, 0.34);
+}
+
+.header a {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+h1 a {
+  color: white;
+}
+
+svg:not(.recharts-surface) {
+  position: absolute;
+  top: 22%;
+  left: 0;
+  margin-top: -13px;
+}
+
+.return__button {
+  padding: 10px;
+  align-self: flex-start;
+}
+
+.home-search {
+  padding: 40px 0px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  border: 1px solid #ddd;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  line-height: 3rem;
+}
+
+.home__Cryptos {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.home__Crypto {
+  gap: 32px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+.home__Crypto span {
+  display: block;
+}
+
+.home__Crypto a {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.home__Crypto__Image {
+  width: 50px;
+}
+
+.home__Crypto__Name {
+  flex: 1;
+  font-size: 1rem;
+  color: #111;
+  font-weight: 600;
+}
+
+.home__Crypto__Btc {
+  color: #111;
+  font-size: 1rem;
+}
+
+.home__Crypto__Btc img {
+  width: 1rem;
+  display: inline-block;
+  margin: -5px 5px 0 0;
+  vertical-align: middle;
+}
+
+.home__Crypto__Usd {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.home__Cryptos__List {
+  border-top: 1px solid #ddd
+}
+
+.show__Header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.show__Header h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.show__Header img {
+  width: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.loadingScreen {
+  width: 100%; 
+  height: 500px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.show__Graph {
+  height: 200px;
+  width: 100%;
+}
+
+.show__Details{
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.show__Details__Row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  color: #111;
+}
+
+.show__Details__Row h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #111;
+}
+
