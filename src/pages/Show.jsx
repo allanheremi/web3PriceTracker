@@ -12,6 +12,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
+
 const data = [
   {
     name: 'Page A',
@@ -71,6 +72,7 @@ export default function Show() {
   }
 
   return (
+
     <div>
       <Header back/>
       <header className="show__Header">
@@ -93,7 +95,6 @@ export default function Show() {
       </ResponsiveContainer>
       </div>
       </div>
-
           <div className="width">
         <div className="show__Details">
         <h2>Market info</h2>

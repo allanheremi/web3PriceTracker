@@ -1,5 +1,3 @@
-import debounce from '../helpers/debounce';
-import Show from '../pages/Show';
 import { create } from 'zustand';
 import axios from 'axios';
 
