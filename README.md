@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+Web3 Price Tracker
+App Preview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Web3 Price Tracker! This React-based application allows you to effortlessly track the latest price data of various cryptocurrencies. Stay informed and make well-informed decisions with real-time data at your fingertips.
 
-## Available Scripts
+The Web3 Price Tracker is a simple yet powerful app that lets you search for cryptocurrencies and view their price charts. It fetches data from the CoinGecko API, providing you with accurate and up-to-date market information. Empowered by Web3.js and Recharts, this app guarantees a smooth experience as you delve into the world of cryptocurrency prices.
 
-In the project directory, you can run:
+Installation
+To run the Web3 Price Tracker locally on your machine, follow these steps:
 
-### `npm start`
+Clone this repository to your local machine using git clone.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Navigate to the project directory and install the dependencies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+npm install
 
-### `npm test`
+Usage
+Using the Web3 Price Tracker is straightforward:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Enter the name of the cryptocurrency you want to search for in the input field.
 
-### `npm run build`
+As you type, a list of matching cryptocurrencies will appear below the input field.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click on the cryptocurrency you're interested in, and a detailed price chart will be displayed, showing data fetched from the CoinGecko API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Analyze the price trends and gain valuable insights into the cryptocurrency market.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Technologies Used
+The Web3 Price Tracker is built with the following technologies:
 
-### `npm run eject`
+React: For building the user interface and managing the state.
+Web3.js: To interact with blockchain networks and fetch real-time crypto data.
+Recharts: For creating stunning and interactive price charts.
+CoinGecko API: To access up-to-date price information of cryptocurrencies.
+Axios: For handling API requests.
+React Router DOM: For handling navigation within the app.
+Zustand: For state management.
+API
+The app relies on the CoinGecko API to fetch cryptocurrency data. You can find more information about their API and endpoints at https://www.coingecko.com/api/documentation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+License
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Thank you for checking out the Web3 Price Tracker. I hope you find it useful for your crypto tracking needs. If you encounter any problems or have any questions, don't hesitate to reach out.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy tracking!
