@@ -1,6 +1,8 @@
 Web3 Price Tracker
 App Preview
 
+<img width="664" alt="image" src="https://github.com/allanheremi/web3PriceTracker/assets/121552608/8832c29d-2bdb-431f-b41f-875c46f4d72b">
+
 Welcome to the Web3 Price Tracker! This React-based application allows you to effortlessly track the latest price data of various cryptocurrencies. Stay informed and make well-informed decisions with real-time data at your fingertips.
 
 The Web3 Price Tracker is a simple yet powerful app that lets you search for cryptocurrencies and view their price charts. It fetches data from the CoinGecko API, providing you with accurate and up-to-date market information. Empowered by Web3.js and Recharts, this app guarantees a smooth experience as you delve into the world of cryptocurrency prices.
